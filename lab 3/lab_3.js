@@ -41,7 +41,7 @@ for(let index = 0; index<username.length; index++){
 }
 console.log(`There is are ${counter_e} letter e in 'username'.`)
 
-console.log("---------- EXERCISE FOR LOOP ----------")
+console.log("---------- EXERCISE A ----------")
 let num = [-3,10,0,8,-9,5,-2,8,6,-1]
 let neg = 0
 let pos = 0
@@ -87,10 +87,22 @@ while(true){
 }
 console.log(`Sum of all even numbers: ${sumeven}`)
 
-console.log("---------- Example 8: Continue in a for Loop ----------")
+console.log("---------- Example 9: Continue in a for Loop ----------")
 for(let n = -5; n<=5; n++){
     if(n%2===0){
         continue
     }
     console.log(n)
 }
+
+console.log("---------- EXCERISE B ----------")
+const PIN = 6789
+let userpin = parseInt(prompt("Enter your PIN: "))
+let pinCounter = 0;
+while(userpin!==PIN){
+    pinCounter++
+    userpin = parseInt(prompt("Wrong PIN! Enter another PIN: "))
+    if(pinCounter>=3){
+        console.log("Account is locked!")}
+}
+console.log(`Your pin number ${userpin} is correct!`)
