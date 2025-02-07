@@ -54,3 +54,43 @@ for(let index = 0; index<num.length; index++){
 }
 console.log(`Sum of all the positive numbers is: ${pos}.`)
 console.log(`Sum of all the negative numbers is: ${neg}.`)
+
+console.log("---------- Example 6: while Loop as a counter ----------")
+let y = 0;
+while(y<=4){
+    console.log(y);
+    y++
+}
+
+console.log("---------- Example 7: while Loop Application ----------")
+const SECRET =8
+let usernumber = parseInt(prompt("Enter a number: "))
+let guessCounter = 0;
+while(usernumber!==SECRET){
+    guessCounter++
+    usernumber = parseInt(prompt("Wrong Guess! Enter another number: "))
+}
+console.log(`${usernumber} is right! Total attempts: ${guessCounter}`)
+
+console.log("---------- Example 8: Break in a while Loop ----------")
+let sumeven = 0;
+while(true){
+    let collectnumber = parseInt(prompt("Enter a positive number: "))
+    if(collectnumber<0){
+        break
+    }
+    else{
+        if(collectnumber%2===0){
+            sumeven+=collectnumber
+        }
+    }
+}
+console.log(`Sum of all even numbers: ${sumeven}`)
+
+console.log("---------- Example 8: Continue in a for Loop ----------")
+for(let n = -5; n<=5; n++){
+    if(n%2===0){
+        continue
+    }
+    console.log(n)
+}
