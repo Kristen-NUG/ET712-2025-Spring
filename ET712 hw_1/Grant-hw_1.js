@@ -36,6 +36,6 @@ for(let index = 0; index<10; index++){
         mul7++;
     }
 }
-console.log(`${mul3} numbers are multiples of 3`);
-console.log(`${mul5} numbers are multiples of 5`);
-console.log(`${mul7} numbers are multiples of 7`);
+console.log(`${mul3} numbers are multiples of 3`)
+console.log(`${mul5} numbers are multiples of 5`)
+console.log(`${mul7} numbers are multiples of 7`)
