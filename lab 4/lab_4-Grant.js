@@ -90,8 +90,15 @@ console.log(`---------- EXCERISE ----------`)
 function checkName(){
     let name = prompt("What is your name?")
     let numcheck = isNaN(parseInt(name))
-    if(numcheck===true){
+    if(numcheck===false){
         console.log(`${name} is invalid! Please enter a name again.`)
     }
-    
+    else if(name===""){
+        console.log(`You forgot to enter a name! Please enter a name again.`)
+    }
+    else if(numcheck===true){
+        let name_upper = name.toUpperCase()
+        console.log(`Welcome ${name_upper} to the class!`)
+    }
 }
+
