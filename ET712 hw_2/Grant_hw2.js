@@ -4,13 +4,20 @@ console.log(`Kristen Grant ET712 Homework 2`)
 
 console.log(`---------- Program 1: Name_Counting Function ----------`)
 function name_counting(){
-    let names = ['Eleanor', 'Penelope', 'Daisy', 'Lorie', 'Aj', 'Sam', 'Theodore', 'Ella', 'Bella', 'Amber', 'Steph', 'Elizabeth', 'Olivander', 'Nathan', 'Courtney']
+    let names = ['Eleanor', ' Penelope', ' Daisy', ' Lorie', ' Aj', ' Sam', ' Theodore', ' Ella', ' Bella', ' Amber', ' Steph', ' Elizabeth', ' Olivander', ' Nathan', ' and Courtney']
     let count = 0;
     for (let i = 0; i < names.length; i++){
-        if (names[i].length <= 5){
+        let nt = names[i].trim();
+        if (nt.length <= 5){
             count++;
         }
     }
     console.log(`These are the list of names: ${names}.`)
+    console.log(`There are ${names.length} names in the array.`)
     console.log(`There are ${count} names with 5 or fewer characters in the array.`)
+}
+
+console.log(`---------- Program 2: CheckNum Function ----------`)
+function checkNum(){
+    
 }
