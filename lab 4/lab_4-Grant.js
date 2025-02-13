@@ -85,3 +85,13 @@ function randclr(){
     return colors[random_index]
 }
 console.log(`Color picked = ${randclr()}.`)
+
+console.log(`---------- EXCERISE ----------`)
+function checkName(){
+    let name = prompt("What is your name?")
+    let numcheck = isNaN(parseInt(name))
+    if(numcheck===true){
+        console.log(`${name} is invalid! Please enter a name again.`)
+    }
+    
+}
