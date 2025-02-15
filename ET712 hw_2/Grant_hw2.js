@@ -21,7 +21,7 @@ console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
     let num = parseInt(prompt(`Please enter a number: `));
     let nc = isNaN(num);
-    while (nc){
+    while (num){
         num = parseInt(prompt(`Please enter a number: `));
         nc = isNaN(num);
         if (nc===true){
