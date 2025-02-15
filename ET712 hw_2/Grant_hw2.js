@@ -19,6 +19,8 @@ function name_counting(){
 
 console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
+    let num = parseInt(prompt(`Please enter a number: `));
+    let nc = isNaN(num);
     while (nc){
         num = parseInt(prompt(`Please enter a number: `));
         nc = isNaN(num);
