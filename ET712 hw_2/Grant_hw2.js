@@ -29,7 +29,7 @@ while (isNaN(num));
 if (num % 2 === 0){
     console.log(`The number ${num} is even.`);
 }
-else {
+if (num % 2 !== 0){
     console.log(`The number ${num} is odd.`);
 }
 }
