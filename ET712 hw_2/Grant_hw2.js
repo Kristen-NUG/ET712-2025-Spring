@@ -20,12 +20,11 @@ function name_counting(){
 console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
 let num = parseInt(prompt(`Please enter a number:`));;
-do {
     if (isNaN(num)) {
         console.log(`The input is not a number. Please enter a number.`);
         break;
     }
-} while (isNaN(num));
+while (isNaN(num));
 
 if (num % 2 === 0){
     console.log(`The number ${num} is even.`);
