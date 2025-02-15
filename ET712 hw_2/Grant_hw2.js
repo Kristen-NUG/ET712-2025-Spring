@@ -24,8 +24,6 @@ let num = parseInt(prompt(`Please enter a number:`));;
         console.log(`The input is not a number. Please enter a number.`);
         break;
     }
-while (isNaN(num));
-
 if (num % 2 === 0){
     console.log(`The number ${num} is even.`);
 }
