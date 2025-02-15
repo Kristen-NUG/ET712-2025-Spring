@@ -19,24 +19,15 @@ function name_counting(){
 
 console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
-    let num = parseInt(prompt(`Please enter a number: `));
-    let nc = isNaN(num);
-    while (num){
-        num = parseInt(prompt(`Please enter a number: `));
-        nc = isNaN(num);
-        if (nc===true){
-            console.log(`You did not enter a number. Please try again.`);
-            continue;
-        }
-        else if(nc===false){
-            break;
-        }
-        else{
-            if (num % 2 === 0){
-                console.log(`The number ${num} is even.`);
-            } else {
-                console.log(`The number ${num} is odd.`);
-            }
-        }
+    let num = prompt(parseInt(`Please enter a number:`));
+    let check = isNaN(num);
+    if (num % 2 === 0){
+        console.log(`The number ${num} is even.`);
+    } else {
+        console.log(`The number ${num} is odd.`);
     }
+    if (check === true){
+        console.log(`The input is not a number. Please enter a number.`);
+        continue until; (check === false);
+}
 }
