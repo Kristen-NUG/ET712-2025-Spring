@@ -19,5 +19,17 @@ function name_counting(){
 
 console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
-    
+    for(let num = 0; num <= Infinity; num++){
+        let num = prompt(parseInt('Please enter a number.'));
+        if (num % 2 == 0){
+            console.log(`${num} is even.`)
+        } else {
+            console.log(`${num} is odd.`)
+        }
+        let nc = isNan(parseInt(num));
+        if (nc == true){
+            console.log(`${num} is not a number.`)
+            continue;
+        }
+    }
 }
