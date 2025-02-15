@@ -21,13 +21,13 @@ console.log(`---------- Program 2: CheckNum Function ----------`)
 function checkNum(){
     let num = parseInt(prompt(`Please enter a number: `));
     let nc = isNaN(num);
-    for(let i = 0; i <= num; i++){
+    for(let i = 1; i <= num; i++){
         if(i % 2 == 0){
             console.log(`${i} is even.`)
         } else {
             console.log(`${i} is odd.`)
         }
-        if(nc===true){
+        if(nc===false){
             console.log(`Please enter a valid number.`);
             continue;
         }
