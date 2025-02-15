@@ -32,7 +32,7 @@ function checkNum(){
             }
             break;
         } else {
-            console.log("Invalid input. Please enter a valid number.");
+            console.log(`Invalid input. Please enter a valid number.`);
         }
     }
 }
