@@ -23,6 +23,7 @@ let num = parseInt(prompt(`Please enter a number:`));;
 do {
     if (isNaN(num)) {
         console.log(`The input is not a number. Please enter a number.`);
+        break;
     }
 } while (isNaN(num));
 
