@@ -32,8 +32,33 @@ console.log(maxnum)
 
 console.log(`---------- Example 6: Objects ----------`)
 const car = {
+    //properties
     type: `Fiat`, 
     model: 500,
     color: `white`,
-    price: 23000
+    price: 23000,
+
+    description:function(){
+        return `${this.color} ${this.type} costs $${this.price}`
+    }
 }
+console.log(car.model)
+console.log(car.description())
+
+console.log(`---------- Example 7: Objects ----------`)
+const hen = {
+    name: `Helen`,
+    year: 2025,
+    eggcount: 0,
+
+    layanegg:function(){
+        this.eggcount++
+        return `EGG`
+    }
+}
+console.log(`${hen.name} has laid ${hen.eggcount} eggs.`)
+console.log(hen.layanegg())
+console.log(hen.layanegg())
+console.log(`${hen.name} has laid ${hen.eggcount} eggs.`)
+console.log(hen.layanegg())
+console.log(`${hen.name} has laid ${hen.eggcount} eggs.`)
