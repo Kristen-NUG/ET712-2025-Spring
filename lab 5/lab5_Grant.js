@@ -29,3 +29,11 @@ console.log(`---------- Example 5: Spread Syntax ----------`)
 nums = [-2, 5, 9, 3, -8]
 let maxnum = Math.max(...nums)
 console.log(maxnum)
+
+console.log(`---------- Example 6: Objects ----------`)
+const car = {
+    type: `Fiat`, 
+    model: 500,
+    color: `white`,
+    price: 23000
+}
