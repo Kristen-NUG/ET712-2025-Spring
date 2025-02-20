@@ -62,3 +62,19 @@ console.log(hen.layanegg())
 console.log(`${hen.name} has laid ${hen.eggcount} eggs.`)
 console.log(hen.layanegg())
 console.log(`${hen.name} has laid ${hen.eggcount} eggs.`)
+
+console.log(`---------- Example 8: Try-Excepts ----------`)
+function yell(msg){
+    try{
+    console.log(msg.toUpperCase().repeat(3))
+    }
+    catch{
+        console.log(`ERROR!`)
+    }
+    finally{
+        console.log(`End of function 'yell'`)
+    }
+}
+yell(`help! `)
+yell(8)
+console.log(`End of program 8`)
