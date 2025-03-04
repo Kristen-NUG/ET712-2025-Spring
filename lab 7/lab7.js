@@ -12,3 +12,8 @@ console.log(`-------- Example 2: Loop Through Each Element in a Node --------`)
 for(let n = 0; n<methods.length; n++){
     console.log(methods[n]);
 }
+console.log(`-------- Example 3: The Click Event --------`)
+let btn = document.querySelector(".btnclick")
+btn.addEventListener("click", function(){
+    alert(`BTN WAS CLICKED!`)
+})
