@@ -37,3 +37,34 @@ btnsquare.addEventListener("click", function(){
 btnrectangle.addEventListener("click", function(){
     shape.className = ("rectangle")
 })
+
+let event6 = document.querySelector(".event6")
+event6.onmouseout = function(){
+    alert("MOUSE OUT - Example 6")
+}
+function openalert(){
+    alert("CLICK EVENT - Example 7")
+}
+let divexample8 = document.querySelector(".divexample8")
+divexample8.onmouseout=function(){
+    let randred= Math.floor(Math.random()*255)
+    let randgreen= Math.floor(Math.random()*255)
+    let randblue= Math.floor(Math.random()*255)
+    divexample8.style.backgroundColor=`rgb(${randred}, ${randgreen}, ${randblue})`
+}
+
+let inputex9 = document.querySelector(".inputex9")
+let exparagraph9 = document.querySelector(".ex9paragraph")
+inputex9.onkeydown = function(event){
+    exparagraph9.innerHTML = `Key ${event.key} was pressed.`
+}
+
+console.log(`---------- Exercise ----------`)
+let ps1 = document.querySelector(".ps1")
+ps1.onmouseout = function(event){
+    ps1.innerHTML = `Kristen Grant`
+}
+let ps2 = document.querySelector(".ps2")
+ps2.clickEvent = function(){
+    
+}
