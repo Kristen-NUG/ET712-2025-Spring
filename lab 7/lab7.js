@@ -57,6 +57,7 @@ let inputex9 = document.querySelector(".inputex9")
 let exparagraph9 = document.querySelector(".ex9paragraph")
 inputex9.onkeydown = function(event){
     exparagraph9.innerHTML = `Key ${event.key} was pressed.`
+    divs3.style.width=`300px`
 }
 
 console.log(`---------- Exercise ----------`)
@@ -74,6 +75,4 @@ divs2.addEventListener('click', function(){
     divs2.style.backgroundColor= `indigo`
 })
 let divs3 = document.querySelector(".divs3")
-divs3.onkeydown = function(event){
-    divs3.style.width = `300px`
-}
+let inputex =document.querySelector(".inputex")
