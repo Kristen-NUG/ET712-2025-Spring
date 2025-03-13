@@ -65,6 +65,15 @@ ps1.onmouseout = function(event){
     ps1.innerHTML = `Kristen Grant`
 }
 let ps2 = document.querySelector(".ps2")
-ps2.clickEvent = function(){
-    
+ps2.addEventListener('click',function(){
+    ps2.style.fontSize= '25px';
+    ps2.style.color = 'olive';
+})
+let divs2 = document.querySelector(".divs2")
+divs2.addEventListener('click', function(){
+    divs2.style.backgroundColor= 'indigo'
+})
+let divs3 = document.querySelector(".divs3")
+divs3.onkeydown = function(event){
+    divs3.style.width = '300px'
 }
