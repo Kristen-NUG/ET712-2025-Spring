@@ -36,3 +36,14 @@ linkreadmore.addEventListener("click", function(){
 closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
+let circle = document.querySelector(".circle")
+let counter = document.querySelector(".counter")
+let resetButton = document.querySelector(".resetButton")
+circle.addEventListener("click", function(){
+    counter++;
+    counter.textContent = counter;
+})
+resetButton.addEventListener("click", function(){
+    counter = 0;
+    counter.textContent = counter
+})
