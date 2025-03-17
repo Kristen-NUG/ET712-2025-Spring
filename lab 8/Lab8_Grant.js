@@ -8,4 +8,5 @@ btnpressme.addEventListener("click", function(e){
     else{
         e.target.textContent = "PRESS ME"
     }
+    e.target.clasList.toggle("btnactive")
 })
