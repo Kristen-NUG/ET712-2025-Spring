@@ -37,13 +37,13 @@ closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
 let circle = document.querySelector(".circle")
-let counter = document.querySelector(".counter")
+let counterDisplay = document.querySelector(".counter")
 let resetButton = document.querySelector(".resetButton")
 circle.addEventListener("click", function(){
     counter++;
-    counter.textContent = counter;
+    counterDisplay.textContent = counter;
 })
 resetButton.addEventListener("click", function(){
     counter = 0;
-    counter.textContent = counter
+    counterDisplay.textContent = counter
 })
