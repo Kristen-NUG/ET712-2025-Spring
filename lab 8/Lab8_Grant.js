@@ -19,3 +19,10 @@ fruitlist.addEventListener("click", function(event){
         console.log(event.target)
     }
 })
+
+let linkqcc = document.querySelector(".linkqcc")
+linkqcc.addEventListener("click", function(event){
+    event.preventDefault()
+    alert(`QCC website is off`)
+})
+
