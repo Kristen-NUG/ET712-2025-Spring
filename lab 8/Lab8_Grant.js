@@ -1,11 +1,11 @@
 console.log(`Kristen Grant`)
 
 let btnpressme = document.querySelector(".btnpressme")
-btnpressme.addEventListener("click", function(){
-    if(btnpressme.textContent = "PRESS ME"){
-        btnpressme.textContent = "Button was pressed!"
+btnpressme.addEventListener("click", function(e){
+    if(e.target.textContent === "PRESS ME"){
+        e.target.textContent = "Button was pressed!"
     }
     else{
-        btnpressme.textContent = "PRESS ME"
+        e.target.textContent = "PRESS ME"
     }
 })
