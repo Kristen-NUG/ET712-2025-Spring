@@ -10,3 +10,12 @@ btnpressme.addEventListener("click", function(e){
     }
     e.target.classList.toggle("btnactive")
 })
+let fruitlist = document.querySelector("#fruitlist")
+fruitlist.addEventListener("click", function(event){
+    if(event.target.tagName.toLowerCase()==='li'){
+        event.target.remove()
+    }
+    else{
+        console.log(event.target)
+    }
+})
