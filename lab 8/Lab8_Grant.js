@@ -37,14 +37,14 @@ closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
 let counter = 0;
-let circle = document.document.querySelector('.circle');
-let counterDisplay = document.document.querySelector('.counter');
-let resetButton = document.document.querySelector('.resetButton');
-circle.addEventListener('click', function() {
+let circle = document.document.querySelector("#circle");
+let counterDisplay = document.document.querySelector("#counter");
+let resetButton = document.document.querySelector("#resetButton");
+circle.addEventListener("click", function(){
     counter++;
     counterDisplay.textContent = counter;
 });
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener("click", function(){
     counter = 0;
     counterDisplay.textContent = counter;
 })
