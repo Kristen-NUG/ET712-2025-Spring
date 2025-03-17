@@ -26,3 +26,13 @@ linkqcc.addEventListener("click", function(event){
     alert(`QCC website is off`)
 })
 
+let modalwindow = document.querySelector(".modalwindow")
+let linkreadmore = document.querySelector(".linkreadmore")
+let closex = document.querySelector(".closex")
+
+linkreadmore.addEventListener("click", function(){
+    modalwindow.style.display = "block"
+})
+closex.addEventListener("click", function(){
+    modalwindow.style.display = "none"
+})
