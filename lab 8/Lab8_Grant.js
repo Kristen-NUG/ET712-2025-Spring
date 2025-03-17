@@ -37,9 +37,9 @@ closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
 let counter = 0;
-let circle = document.document.querySelector(".circle");
-let counterDisplay = document.document.querySelector("#counter");
-let resetButton = document.document.querySelector("#resetButton");
+let circle = document.document.getElementById(".circle");
+let counterDisplay = document.document.getElementById("#counter");
+let resetButton = document.document.getElementById("#resetButton");
 circle.addEventListener("click", function(){
     counter++;
     counterDisplay.textContent = counter;
