@@ -15,3 +15,15 @@ btnright.addEventListener("click", function(){
 btnleft.addEventListener("click", function(){
     scrollgallery(-600)
 })
+
+let topcontainer = document.querySelector(".topcontainer")
+window.addEventListener("click", function(){
+    let pxTop = this.window.scrollY
+    console.log(pxTop)
+    if(pxTop>100){
+        topcontainer.style.display = "block"
+    }
+    else{
+        topcontainer.style.display = "none"
+    }
+})
