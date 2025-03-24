@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Grant_hw4.css">
+</head>
+<body>
+    <h1>Kristen Grant</h1>
+    <h2>Homework 4: Window & Form Events</h2>
+    <h3>Exercise 1: Form Validation & Event Handling</h3>
+    <form id="userForm">
+        <label>Name: <input type="text" id="name"></label>
+        <span class="error" id="nameError"></span><br><br>
+    
+        <label>Email: <input type="text" id="email" /></label>
+        <span class="error" id="emailError"></span><br><br>
+    
+        <label>Password: <input type="password" id="password" /></label>
+        <span class="error" id="passwordError"></span><br><br>
+    
+        <button type="btnsubmit">Submit</button>
+    </form>
+    <p class="success" id="successMessage"></p>
+
+    <h3>Exercise 2: Card Gallery with Navigation</h3>
+    <div class="gallery-container">
+        <div class="gallery">
+          <div class="card"><img src="img1.jpg" alt="Image 1"><h3>Title 1</h3><p>Description 1</p></div>
+          <div class="card"><img src="img2.jpg" alt="Image 2"><h3>Title 2</h3><p>Description 2</p></div>
+          <div class="card"><img src="img3.jpg" alt="Image 3"><h3>Title 3</h3><p>Description 3</p></div>
+          <div class="card"><img src="img4.jpg" alt="Image 4"><h3>Title 4</h3><p>Description 4</p></div>
+          <div class="card"><img src="img5.jpg" alt="Image 5"><h3>Title 5</h3><p>Description 5</p></div>
+          <div class="card"><img src="img6.jpg" alt="Image 6"><h3>Title 6</h3><p>Description 6</p></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="prev">Left</button>
+        <button id="next">Right</button>
+    </div>
+
+    <script src="Grant_hw4.js"></script>
+</body>
+</html>
